@@ -4,53 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Contactame</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Inter:wght@300&display=swap');</style>
 </head>
     <body>
         <header>
-            <img src="../images/logo.png" alt="" height="200">
             <nav>
-                <ul>
+                <img class="nav__logo" src="../images/logo.png" alt="">
+                <ul class="nav__list">
                     <li>
-                        <a href="../index.html">Inicio</a>
+                        <a class="nav__link" href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="../pages/bio.html">Bio</a>
+                        <a class="nav__link" href="../pages/bio.html">Bio</a>
                     </li>
                     <li>
-                        <a href="../pages/news.html">News</a>
+                        <a class="nav__link" href="../pages/news.html">News</a>
                     </li>
                     <li>
-                        <a href="../pages/mis_obras.html">Mis Obras</a>
+                        <a class="nav__link" href="../pages/mis_obras.html">Mis Obras</a>
                     </li>
                     <li>
-                        <a href="../pages/contactame.html">Contactame</a>
+                        <a class="nav__link" href="../pages/contactame.html">Contactame</a>
                     </li>
                 </ul>
+                <label class="nav__link" for="">Light/Dark mode</label>
             </nav> 
         </header>
-        <section>
-            <img src="" alt="">
-            <article>
-                <form action="#">
-                    <input type="text" placeholder="Nombre"><br>
-                    <textarea placeholder="Observaciones"></textarea><br>
-                    <input type="email" placeholder="email" name="email"><br>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </article>
-        </section>
-        <footer>
-            <label for="">MIS REDES</label>
-            <div>
-                <img src="../images/logo.png" alt="" height="50">
+        <main>
+            <div class="main__breadcrumbs">
+                <a href="../index.html">Inicio</a><label for=""> > Contactame</label>
             </div>
-            <div>
-                <img src="../images/dark-face.png" alt="" height="30">
-                <img src="../images/dark-insta.png" alt="" height="30">
-                <img src="../images/dark-twit.png" alt="" height="30">
-                <img src="../images/dark-mail.png" alt="" height="30">
+            <section class="contact">
+                <h1>Contactame</h1>
+                <img src="" alt="">
+                <article>
+                    <form action="#">
+                        <input class="form__height form__text form__radio" type="text" placeholder="Nombre"><br>
+                        <textarea class="form__height form__text form__radio" placeholder="Mensaje"></textarea><br>
+                        <input class="form__height form__text form__radio" type="email" placeholder="email" name="email"><br>
+                        <br>
+                        <input class="form__btn form__radio" type="submit" value="Enviar">
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__title">
+                <img class="footer__logo" src="../images/logo.png" alt="" height="50">
+            </div>
+            <div class="footer__title">
+                <label for="">MIS REDES</label>
+            </div>
+            <div class="footer__links">
+                <a href=""><img src="../images/dark-face.png" alt="" height="30"></a>
+                <a href=""><img src="../images/dark-insta.png" alt="" height="30"></a>
+                <a href=""><img src="../images/dark-twit.png" alt="" height="30"></a>
+                <a href=""><img src="../images/dark-mail.png" alt="" height="30"></a>
             </div>
         </footer>
     </body>
