@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: black;
 }
 
 /* NAV */
@@ -59,7 +60,9 @@ footer {
 main {
     padding-top: 100px;
     background-color: black;
-    height: 700px;
+    min-height: 700px;
+    width: 80%;
+    margin:auto;
 }
 
 .main__breadcrumbs {
@@ -67,7 +70,7 @@ main {
     font-size: 1.5rem;
 }
 
-h1 {
+.h1__contact {
     color: white;
     font-style: italic;
     font-family: "Arvo", sans-serif;
@@ -97,4 +100,55 @@ form textarea {
 }
 .form__radio {
     border-radius: 10px;
+}
+.carousel {
+    width: 60%;
+    height: 500px;
+    display: inline;
+}
+.carousel label{
+    color: white;
+    font-size: 1.2rem;
+}
+.carousel .btn{
+    height: 50px;
+    width: 180px;
+    background-color:#CB0C90;
+    font-weight: 600;
+}
+.h1__index {
+    color: #CB0C90;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.h2__index {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.carousel p {
+    font-size: 1.5rem;
+    color: white;
+}
+.logo_index img{
+    width: 30%;
+    display: inline;
+}
+
+.cards_index {
+    background-color: white;
+    height: 350px;
+    width: 350px; 
+    border-radius: 8px;
+    margin: 20px;
+}
+.cards_index h3{
+    font-size: 2rem;
+}
+.cards_index p{
+    font-size: 1.5rem;
+}
+.cards_index a{
+    font-size: 1.3rem;
 }
