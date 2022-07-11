@@ -9,146 +9,210 @@ html {
     background-color: black;
 }
 
-/* NAV */
-header {
-    position: fixed;
-    width: 100%;
+
+@media screen and (min-width: 768px){
+
 }
+
+@media screen and (min-width: 21000px){
+
+    /* FOOTER */
+    footer {
+        grid-area: footer;
+        height: 125px;
+        border-top: 1px solid rgb(138, 138, 138);
+        background-color: #0B0D17;
+    }
+    .footer__title {
+        display: inline;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+    }
+    .footer__logo {
+        text-align: left;
+    }
+    .footer__links {
+        text-align: center;
+    }
+
+    /* MAIN */
+    main {
+        padding-top: 100px;
+        background-color: black;
+        min-height: 700px;
+        width: 80%;
+        margin:auto;
+    }
+
+    .main__breadcrumbs {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .h1__contact {
+        color: white;
+        font-style: italic;
+        font-family: "Arvo", sans-serif;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .form__height {
+        width: 400px;
+    }
+    .form__btn {
+        width: 150px;
+        height: 35px;
+        background-color: #879C7B;
+    }
+    .form__text {
+        height: 35px;
+    }
+    form textarea {
+        margin: 10px;
+        min-height: 150px;
+        resize: vertical;
+    }
+    .form__radio {
+        border-radius: 10px;
+    }
+    .carousel {
+        width: 60%;
+        height: 500px;
+        display: inline;
+    }
+    .carousel label{
+        color: white;
+        font-size: 1.2rem;
+    }
+    .carousel .btn{
+        height: 50px;
+        width: 180px;
+        background-color:#CB0C90;
+        font-weight: 600;
+    }
+    .h1__index {
+        color: #CB0C90;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .h2__index {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .carousel p {
+        font-size: 1.5rem;
+        color: white;
+    }
+    .logo_index img{
+        width: 30%;
+        display: inline;
+    }
+
+    .cards_index {
+        background-color: white;
+        height: 350px;
+        width: 350px; 
+        border-radius: 8px;
+        margin: 20px;
+    }
+    .cards_index h3{
+        font-size: 2rem;
+    }
+    .cards_index p{
+        font-size: 1.5rem;
+    }
+    .cards_index a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "bio"
+        "plays"
+        "footer";
+
+        grid-template-rows: 80px 1fr 2fr 120px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        height: 1000px;
+        align-self: center;
+    }
+    header {
+        border: 2px solid yellow;
+        grid-area: header;
+        position: fixed;
+        width: 100%;
+    }
+    section:first-of-type {
+        border: 2px solid yellow;
+        grid-area: bio;
+    }
+    section:last-of-type {
+        border: 2px solid yellow;
+        grid-area: plays;
+    }
+    footer {
+        border: 2px solid yellow;
+        grid-area: footer;
+    }
+
+    #grilla__nav {
+        display: grid;
+        grid-template-areas:
+        "header_logo header_list header_mode";
+        grid-template-columns: 15% auto 20%;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+    .nav__logo {
+        grid-area: header_logo;
+    }
+    .nav__list {
+        grid-area: header_list;
+        align-content: center;
+    }
+    .nav__mode {
+        grid-area: header_mode;
+        align-content: center;
+    }
+
+    #grilla__bio {
+        display: grid;
+        grid-template-areas: 
+        "bio__text bio__logo";
+        grid-template-columns: 60% auto;
+    }
+}
+
 nav {
     background-color: white;
-    width: 100%;
-    height: 8%;
 }
-nav .nav__logo {
-    width: 10rem;
-    display: inline-block;
-}
-nav ul {
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px;
+.nav__logo {
+    height: 15%;
 }
 .nav__list li {
+    list-style-type: none;
     display: inline-block;
+    text-decoration: none;
+    padding: 5px;
 }
 .nav__link {
     font-weight: bold;
+    list-style-type: none;
     text-decoration: none;
     font-size: 2rem;
-}
-
-/* FOOTER */
-footer {
-    height: 125px;
-    border-top: 1px solid rgb(138, 138, 138);
-    background-color: #0B0D17;
-}
-.footer__title {
-    display: inline;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
-.footer__logo {
-    text-align: left;
-}
-.footer__links {
-    text-align: center;
-}
-
-/* MAIN */
-main {
-    padding-top: 100px;
-    background-color: black;
-    min-height: 700px;
-    width: 80%;
-    margin:auto;
-}
-
-.main__breadcrumbs {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.h1__contact {
-    color: white;
-    font-style: italic;
-    font-family: "Arvo", sans-serif;
-    text-align: center;
-    font-size: 4rem;
-}
-
-.contact {
-    text-align: center;
-}
-
-.form__height {
-    width: 400px;
-}
-.form__btn {
-    width: 150px;
-    height: 35px;
-    background-color: #879C7B;
-}
-.form__text {
-    height: 35px;
-}
-form textarea {
-    margin: 10px;
-    min-height: 150px;
-    resize: vertical;
-}
-.form__radio {
-    border-radius: 10px;
-}
-.carousel {
-    width: 60%;
-    height: 500px;
-    display: inline;
-}
-.carousel label{
-    color: white;
-    font-size: 1.2rem;
-}
-.carousel .btn{
-    height: 50px;
-    width: 180px;
-    background-color:#CB0C90;
-    font-weight: 600;
-}
-.h1__index {
-    color: #CB0C90;
-    font-family: "Inter", sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.h2__index {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-.carousel p {
-    font-size: 1.5rem;
-    color: white;
-}
-.logo_index img{
-    width: 30%;
-    display: inline;
-}
-
-.cards_index {
-    background-color: white;
-    height: 350px;
-    width: 350px; 
-    border-radius: 8px;
-    margin: 20px;
-}
-.cards_index h3{
-    font-size: 2rem;
-}
-.cards_index p{
-    font-size: 1.5rem;
-}
-.cards_index a{
-    font-size: 1.3rem;
 }
