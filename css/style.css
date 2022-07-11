@@ -9,11 +9,9 @@ html {
     background-color: black;
 }
 
-
 @media screen and (min-width: 768px){
 
 }
-
 
 @media screen and (min-width: 1200px){
     section {
@@ -36,21 +34,17 @@ html {
         align-self: center;
     }
     header {
-        border: 2px solid yellow;
         grid-area: header;
         position: fixed;
         width: 100%;
     }
     section:first-of-type {
-        border: 2px solid yellow;
         grid-area: bio;
     }
     section:last-of-type {
-        border: 2px solid yellow;
         grid-area: plays;
     }
     footer {
-        border: 2px solid yellow;
         grid-area: footer;
     }
 
@@ -73,13 +67,6 @@ html {
     .nav__mode {
         grid-area: header_mode;
         align-content: center;
-    }
-
-    #grilla__bio {
-        display: grid;
-        grid-template-areas: 
-        "bio__text bio__logo";
-        grid-template-columns: 60% auto;
     }
 }
 
@@ -127,9 +114,44 @@ footer {
 
 /* INDEX */
 /* Index Bio */
-
+.section__bio {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 100px;
+}
+.carousel {
+    width: 60%;
+    height: 500px;
+}
+.carousel p {
+    font-size: 1.5rem;
+    color: white;
+}
+.h1__index {
+    color: #CB0C90;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+.carousel label{
+    color: white;
+    font-size: 1.2rem;
+}
+.carousel .btn{
+    height: 50px;
+    width: 180px;
+    background-color:#CB0C90;
+    font-weight: 600;
+}
+.logo_index img{
+    width: 550px;
+}
 
 /* Index Cards */
+.h2__index {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
 .section__cards {
     display: flex;
     flex-flow: row wrap;
